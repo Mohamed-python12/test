@@ -1,0 +1,394 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'web_app/ml.png' %}" type="image/png"/>
+    <title>Machine learning - Hub</title>
+</head>
+<body>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="subscribe.html">Social medias</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <div class="container">
+          <div class="text">Machine Learning</div>
+         <video class="player" autoplay loop>
+            <source src="{% static 'web_app/Machine learning.mp4' %}"/>
+          </video>
+          <div class="text2">Hello Programmers 🖐</div>
+          <img src="{% static 'web_app/son.png' %}" class="boy">
+          <div class="boy-title">Who am I ?</div>
+          <div class="boy-text">My name is Mohamed Athif. I know Python and I am learning Machine Learning. I will share some of my thoughts and my programs here.</div>
+          <img class="why" src="{% static 'web_app/question.png' %}">
+          <div class="why-title">Why this website ?</div>
+          <div class="why-text">We made this website for programmers those who want to learn machine learning.<br>Still some people are dealing with some difficulties in machine learning. So we decided<br>to teach you by this website in a simple and easy way</div>
+          <img class="ml" src="{% static 'web_app/ml.png' %}">
+          <div class="ml-title">Why to choose Machine Learning ?</div>
+          <div class="ml-text">During this period machine learning is gaining importance in various process.
+            It helps to find some unknown values from the data given.
+            Google even uses machine learning.</div>
+          <img src="{% static 'web_app/py.png' %}" class=py>
+          <div class="py-title">Why to choose Python ?</div>
+          <div class="py-text">Python is also gaining importance. Because python has a lot of libraries to use.<br>And some ML libraries too.. like numpy, pandas, matplotlib etc.., So we can use python for machine learning</div>
+          <img src="{% static 'web_app/n.png' %}" class="numpy">
+          <div class="numpy-title">What is numpy ?</div>
+          <div class="numpy-text">Numpy is a package of python which is the major one used for machine learning. Which help us to build array, a single dimension or a multi-dimensional arrays.We can also operate these arrays with a large amount of data. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. Numpy is an open-source software and it has many contributors.</div>
+          <img src="{% static 'web_app/panda.png' %}" class="panda">
+          <div class="panda-title">What is pandas ?</div> 
+          <div class="panda-text">Pandas is a python library used for working with datasets. Which helps us to clean , manipulate and analyze data easily. The name Pandas has a reference with both "Panel Data" and "Python Data Analysis". Development of pandas started in 2008, pandas becomes open source in 2009 and First edition of Python for Data Analysis is published in 2012. Pandas was created by Wes McKinney in the year 2007 to 2010. He is an american software developer and a businessman.</div>
+          <img src="{% static 'web_app/bar-chart.png' %}" class="bar">
+          <div class="bar-title">What is Matplotlib ?</div>
+          <div class="bar-text">So in the above paragraph you see about pandas, which helps in working with datasets. Now Matplotlib will helps us to visualize the data from the dataset so we can easily look at the building of the dataset. We can use bar-chart, histogram, and also line-chart with help of matplotlib. Matplotlib was originally written by John D. Hunter. Since then it has an active development community and is distributed under a BSD-style license. Michael Droettboom was nominated as matplotlib's lead developer shortly before John Hunter's death in August 2012 and was further joined by Thomas Caswell.</div>
+          <div class="end">&nbsp;We will discuss about other packages later 👍</div>
+          <div class="footer">
+            <div class="email">Email : pythonwithathif2005@gmail.com<br><br><br><br><br><br><br><br></div>
+            <div class="cr">Copyright © 2021 Mohamed Athif (Machine learning)</div>
+            <a href="https://discord.com/invite/4evDUWVpHe" class="discord" target="_blank">Join our discord</a>
+          </div>
+        </div>
+</body>
+</html>
+<style>
+@media (max-width : 1000px) {
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight : bold;
+  font-size: 18px;
+}
+
+li a:hover {
+  color: blueviolet;
+}
+.container{
+    background: linear-gradient(90deg, rgb(255, 0, 255), rgb(0, 38, 255));
+    height : 300px;
+    width : 100%;
+    border-radius : 10px;
+}
+.text{
+
+    color:white;
+    font-size : 50px;
+    font-weight : bold;
+    margin-left: 490px;
+    padding-top : 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.player{
+    position: relative;
+    margin-left: 450px;
+    width : 500px;
+    border-radius: 20px;
+    margin-top : 50px;
+    border : 5px solid white;
+
+
+}
+.text2{
+    color:#5234eb;
+    margin-left : 590px;
+    padding-top : 25px;
+    font-weight : bold;
+    font-size : 25px;
+    font-family:monospace;
+}
+.boy{
+  width : 200px;
+  height : 200px;
+  float: right;
+  margin-right : 300px;
+  margin-top : 100px;
+
+
+}
+.boy-title{
+  color: #211c51;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+  font-size : 40px;
+  margin-left : 450px;
+  margin-top : 100px;
+}
+
+.boy-text{
+  color : #1900ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 20px;
+  margin-left : 350px;
+  margin-top: 20px;
+}
+.why{
+  float:left;
+  width : 200px;
+  height : 200px;
+  margin-top : 150px;
+  margin-left : 160px;
+}
+
+.why-title{
+  color: #211c51;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+  font-size : 40px;
+  margin-left : 450px;
+  margin-top :150px;
+}
+.why-text{
+  color : #1900ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 20px;
+  margin-left : 400px;
+  margin-top: 20px;
+}
+.ml{
+  float: right;
+  width : 200px;
+  height : 200px;
+  margin-top : 100px;
+  margin-right: 100px;
+}
+.ml-title{
+  color: #211c51;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+  font-size : 40px;
+  margin-left :250px;
+  margin-top : 120px;
+}
+.ml-text{
+  color : #1900ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 20px;
+  margin-left : 250px;
+  margin-top: 20px;
+}
+.py{
+  float:left;
+  width : 200px;
+  height : 200px;
+  margin-top : 100px;
+  margin-left : 160px;
+}
+.py-title{
+  color: #211c51;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+  font-size : 40px;
+  margin-left : 450px;
+  margin-top : 100px;
+}
+.py-text{
+  color : #1900ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 20px;
+  margin-left : 350px;
+  margin-top: 20px;
+}
+.numpy{
+  float: right;
+  width : 200px;
+  height : 200px;
+  margin-top : 200px;
+  margin-right: 50px;
+}
+.numpy-title{
+  color: #211c51;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+  font-size : 40px;
+  margin-left :500px;
+  margin-top : 120px;
+}
+.numpy-text{
+  color : #1900ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 20px;
+  margin-left : 100px;
+  margin-top: 50px;
+}
+.panda{
+  float:left;
+  width : 200px;
+  height : 200px;
+  margin-top : 200px;
+  margin-left : 120px;
+}
+.panda-title{
+  color: #211c51;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+  font-size : 40px;
+  margin-left :500px;
+  margin-top : 160px;
+}
+.panda-text{
+  color : #1900ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 20px;
+  padding-left : 350px;
+  margin-right : 200px;
+  margin-top: 50px;
+}
+.bar{
+  float:right;
+  width : 200px;
+  height : 200px;
+  margin-top : 180px;
+  margin-right : 120px;
+}
+.bar-title{
+  color: #211c51;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight : bold;
+  font-size : 40px;
+  margin-left :500px;
+  margin-top : 160px;
+}
+.bar-text{
+  color : #1900ff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 20px;
+  padding-left : 100px;
+  margin-right : 400px;
+  margin-top: 50px;
+}
+.end{
+  color: #211c51;
+  font-weight : bold;
+  margin-top : 100px;
+  margin-left : 400px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size : 25px;
+
+}
+.footer{
+  position : absolute;
+  background-color: #211c51;
+  width : 100%;
+  height : auto;
+  margin-top : 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.email{
+  float : left;
+  color:white;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top : 100px;
+  padding-left : 200px;
+  font-size : 20px;
+}
+.cr{
+  float: inherit;
+  color:white;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top : 100px;
+  margin-left : 750px;
+  font-size : 20px;
+}
+.discord{
+  position: absolute;
+  color:white;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top : 50px;
+  margin-left : 0px;
+  font-size : 20px;
+}
+}
+@media (max-width: 640px) { 
+li a{
+  font-size : 10px;
+}
+.container{
+  height : 200px;
+}
+.player{
+    margin-left: 100px;
+    width : 200px;
+    margin-top : 50px;
+}
+.text{
+    font-size : 20px;
+    margin-left: 110px;
+}
+.text2{
+    margin-left : 110px;
+    font-size : 20px;
+}
+.boy{
+  margin-top: 50px;
+  margin-left: 100px;
+
+}
+.boy-title{
+  margin-left : 180px;
+  font-size : 20px;
+  margin-top : 320px;
+  padding : 0;
+}
+.boy-text{
+  margin-left: 100px;
+}
+.why-title{
+  margin-top: 450px;
+  margin-left: 200px;
+  font-size: 20px;
+}
+.why-text{
+  margin-left: 100px;
+}
+.ml{
+  margin-right: 250px;
+}
+.ml-title{
+  font-size: 20px;
+  margin-left: 150px;
+
+}
+.ml-text{
+  margin-left: 70px;
+}
+.py-title{
+  font-size: 20px;
+  margin-left: 160px;
+  margin-top: 350px;
+}
+.py-text{
+  margin-left: 70px;
+}
+.n{
+  margin-right: 250px;
+}
+}
+
+
+</style>
+<script>
+  /*alert("This webpage is only compatible for computers, Gonna make it responsive :)");*/
+</script>
